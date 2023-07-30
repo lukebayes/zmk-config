@@ -9,61 +9,61 @@
         long_lwin {
             bindings = <&kp LEFT_WIN>;
             key-positions = <16>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_lalt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <15>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_lctrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <14>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_lshift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <13>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_rwin {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <19>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_ralt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <20>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_rctrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <21>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_rshift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <22>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
 
         long_tab {
             bindings = <&kp TAB>;
             key-positions = <13>;
-            timeout-ms = <150>;
+            timeout-ms = <300>;
         };
     };
 
