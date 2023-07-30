@@ -7,12 +7,9 @@
         compatible = "zmk,combos";
     };
 
-    &mt {
-        tapping-term-ms = <300>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
+        tapping-term-ms = <300>;
 
         default_layer {
             // -----------------------------------------------------------------------------------------
