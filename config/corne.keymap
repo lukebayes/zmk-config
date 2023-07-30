@@ -93,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp LA(TAB)     &kp F2     &kp F4        &kp F11           &kp F12     &kp LEFT_BRACKET        &kp N7        &kp N8        &kp N9       &kp SLASH  &trans
-&trans  &kp LA(LS(TAB))  &kp MINUS  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN    &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &trans
-&trans           &trans     &trans     &trans         &trans            &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
-                                        &to 0        &kp TAB         &kp ENTER            &kp SPACE    &kp DELETE         &to 2
+&trans  &kp ESCAPE  &kp F2         &kp F4           &kp F11     &kp F12     &kp LEFT_BRACKET        &kp N7        &kp N8        &kp N9       &kp SLASH  &trans
+&trans     &kp TAB  &trans      &kp MINUS          &kp PLUS   &kp EQUAL    &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &trans
+&trans      &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp PERIOD         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
+                                    &to 0           &kp TAB   &kp ENTER            &kp SPACE    &kp DELETE         &to 2
             >;
         };
 
@@ -111,7 +111,7 @@
 &trans        &trans    &kp C_MUTE  &kp C_VOL_DN          &kp C_VOL_UP  &kp C_PLAY_PAUSE    &kp CARET    &kp PAGE_UP  &kp KP_MULTIPLY  &kp LPAR         &kp RPAR  &trans
 &trans       &kp TAB  &kp LEFT_ALT  &kp LEFT_GUI  &kp LS(LA(LEFT_ALT))       &kp LA(TAB)     &kp HOME       &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT_ARROW  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                &trans            &trans      &kp END  &kp PAGE_DOWN         &kp LBRC  &kp RBRC         &kp PIPE  &trans
-                                           &to 1               &kp TAB        &kp RETURN    &kp SPACE     &kp DELETE       &kp ESCAPE
+                                           &to 1               &kp TAB        &kp RETURN    &kp SPACE     &kp DELETE           &trans
             >;
         };
     };
