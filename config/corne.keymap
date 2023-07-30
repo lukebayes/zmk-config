@@ -6,9 +6,64 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
-            bindings = <&mo 2>;
-            key-positions = <37 40>;
+        long_lwin {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <16>;
+            timeout-ms = <150>;
+        };
+
+        long_lalt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <15>;
+            timeout-ms = <150>;
+        };
+
+        long_lctrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <14>;
+            timeout-ms = <150>;
+        };
+
+        long_lshift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <13>;
+            timeout-ms = <150>;
+        };
+
+        long_rwin {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <19>;
+            timeout-ms = <150>;
+        };
+
+        long_ralt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <20>;
+            timeout-ms = <150>;
+        };
+
+        long_rctrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <21>;
+            timeout-ms = <150>;
+        };
+
+        long_rshift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <22>;
+            timeout-ms = <150>;
+        };
+
+        long_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1>;
+            timeout-ms = <150>;
+        };
+
+        long_tab {
+            bindings = <&kp TAB>;
+            key-positions = <13>;
+            timeout-ms = <150>;
         };
     };
 
@@ -23,10 +78,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W             &kp E  &kp R      &kp T        &kp Y           &kp U         &kp I       &kp O          &kp P  &trans
-&trans  &kp A  &kp S             &kp D  &kp F      &kp G        &kp H           &kp J         &kp K       &kp L      &kp COLON  &trans
-&trans  &kp Z  &kp X             &kp C  &kp V      &kp B        &kp N           &kp M  &kp LEFT_ALT  &kp DELETE  &kp BACKSPACE  &trans
-                      &kp LEFT_CONTROL  &to 1  &kp ENTER    &kp SPACE  &kp LEFT_SHIFT    &kp ESCAPE
+&trans  &kp Q  &kp W       &kp E    &kp R      &kp T        &kp Y       &kp U         &kp I      &kp O          &kp P  &trans
+&trans  &kp A  &kp S       &kp D    &kp F      &kp G        &kp H       &kp J         &kp K      &kp L      &kp COLON  &trans
+&trans  &kp Z  &kp X       &kp C    &kp V      &kp B        &kp N       &kp M  &kp LEFT_ALT  &kp SLASH  &kp BACKSPACE  &trans
+                      &kp ESCAPE  &kp TAB  &kp ENTER    &kp SPACE  &kp DELETE         &to 1
             >;
         };
 
@@ -38,10 +93,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp LA(TAB)     &kp F2            &kp F4        &kp F11           &kp F12     &kp LEFT_BRACKET          &kp N7        &kp N8        &kp N9       &kp SLASH  &trans
-&trans  &kp LA(LS(TAB))  &kp MINUS         &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN    &kp RIGHT_BRACKET    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &trans
-&trans           &trans     &trans            &trans         &trans            &trans         &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
-                                    &kp LEFT_CONTROL          &to 2         &kp ENTER            &kp SPACE  &kp LEFT_SHIFT    &kp ESCAPE
+&trans      &kp LA(TAB)     &kp F2     &kp F4        &kp F11           &kp F12     &kp LEFT_BRACKET        &kp N7        &kp N8        &kp N9       &kp SLASH  &trans
+&trans  &kp LA(LS(TAB))  &kp MINUS  &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN    &kp RIGHT_BRACKET  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp APOSTROPHE  &trans
+&trans           &trans     &trans     &trans         &trans            &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
+                                        &to 0        &kp TAB         &kp ENTER            &kp SPACE    &kp DELETE         &to 2
             >;
         };
 
@@ -53,10 +108,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &trans    &kp C_MUTE    &kp C_VOL_DN          &kp C_VOL_UP  &kp C_PLAY_PAUSE    &kp CARET    &kp PAGE_UP  &kp KP_MULTIPLY  &kp LPAR         &kp RPAR  &trans
-&trans       &kp TAB  &kp LEFT_ALT    &kp LEFT_GUI  &kp LS(LA(LEFT_ALT))       &kp LA(TAB)     &kp HOME       &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT_ARROW  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2                &trans            &trans      &kp END  &kp PAGE_DOWN         &kp LBRC  &kp RBRC         &kp PIPE  &trans
-                                    &kp LEFT_SHIFT                 &to 0      &kp LEFT_GUI    &kp SPACE         &trans         &kp RALT
+&trans        &trans    &kp C_MUTE  &kp C_VOL_DN          &kp C_VOL_UP  &kp C_PLAY_PAUSE    &kp CARET    &kp PAGE_UP  &kp KP_MULTIPLY  &kp LPAR         &kp RPAR  &trans
+&trans       &kp TAB  &kp LEFT_ALT  &kp LEFT_GUI  &kp LS(LA(LEFT_ALT))       &kp LA(TAB)     &kp HOME       &kp LEFT         &kp DOWN    &kp UP  &kp RIGHT_ARROW  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2                &trans            &trans      &kp END  &kp PAGE_DOWN         &kp LBRC  &kp RBRC         &kp PIPE  &trans
+                                           &to 1               &kp TAB        &kp RETURN    &kp SPACE     &kp DELETE       &kp ESCAPE
             >;
         };
     };
