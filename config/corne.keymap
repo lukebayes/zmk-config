@@ -9,7 +9,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        tapping-term-ms = <300>;
+        tapping-term-ms = <400>;
 
         default_layer {
             // -----------------------------------------------------------------------------------------
