@@ -9,7 +9,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -28,7 +28,7 @@
 
             bindings = <
 &trans             &kp Q               &kp W           &kp E           &kp R      &kp T        &kp Y            &kp U            &kp I                &kp O                      &kp P  &trans
-&trans  &hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F      &kp G        &kp H  &hm LEFT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMICOLON  &trans
+&trans  &hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F      &kp G        &kp H            &kp J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMICOLON  &trans
 &trans             &kp Z               &kp X           &kp C           &kp V      &kp B        &kp N            &kp M     &kp LEFT_ALT            &kp SLASH              &kp BACKSPACE  &trans
                                                   &kp ESCAPE         &kp TAB  &kp ENTER    &kp SPACE       &kp DELETE            &to 1
             >;
@@ -43,8 +43,8 @@
 
             bindings = <
 &trans  &kp ESCAPE  &kp F2         &kp F4           &kp F11     &kp F12     &kp LEFT_BRACKET        &kp N7        &kp N8        &kp N9       &kp SLASH  &trans
-&trans     &hm LEFT_SHIFT TAB   &hm LEFT_CONTROL MINUS &hm LEFT_ALT PLUS  &hm LEFT_GUI EQUAL     &kp G        &kp H  &hm RIGHT_GUI NUMBER_4  &hm RIGHT_ALT NUMBER_5  &hm RIGHT_CONTROL NUMBER_6  &hm RIGHT_SHIFT APOSTROPHE  &trans
-&trans      &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp PERIOD         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
+&trans     &hm LEFT_SHIFT TAB   &hm LEFT_CONTROL MINUS &hm LEFT_ALT PLUS  &hm LEFT_GUI EQUAL     &kp G            &kp H   &kp NUMBER_4  &hm RIGHT_ALT NUMBER_5  &hm RIGHT_CONTROL NUMBER_6  &hm RIGHT_SHIFT APOSTROPHE  &trans
+&trans      &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp PERIOD         &kp NUMBER_0  &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3      &kp PERIOD  &trans
                                     &to 0           &kp TAB   &kp ENTER            &kp SPACE    &kp DELETE         &to 2
             >;
         };
