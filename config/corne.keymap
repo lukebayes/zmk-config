@@ -40,7 +40,7 @@
         numpad_layer {
             bindings = <
 &trans  &kp ESCAPE          &kp F2                  &kp F4             &kp F11             &kp F12      &kp KP_MULTIPLY  &kp N7        &kp N8                  &kp N9                      &kp MINUS             &trans
-&trans  &hm LEFT_SHIFT TAB  &hm LEFT_CONTROL MINUS  &hm LEFT_ALT PLUS  &hm LEFT_GUI EQUAL  &kp G        &kp DIVIDE       &kp NUMBER_4  &hm RIGHT_ALT NUMBER_5  &hm RIGHT_CONTROL NUMBER_6  &hm RIGHT_SHIFT PLUS  &trans
+&trans  &hm LEFT_SHIFT TAB  &hm LEFT_CONTROL MINUS  &hm LEFT_ALT PLUS  &hm LEFT_GUI EQUAL  &kp G        &kp SLASH        &kp NUMBER_4  &hm RIGHT_ALT NUMBER_5  &hm RIGHT_CONTROL NUMBER_6  &hm RIGHT_SHIFT PLUS  &trans
 &trans  &trans              &trans                  &kp LESS_THAN      &kp GREATER_THAN    &kp PERIOD   &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3                &kp BACKSPACE         &trans
                                                     &to 1              &kp ESCAPE          &kp SPACE    &kp ENTER        &kp DELETE    &to 3
             >;
