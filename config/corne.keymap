@@ -30,10 +30,10 @@
 
         move_layer {
             bindings = <
-&trans  &kp NUMBER_1        &kp NUMBER_2            &kp NUMBER_3       &kp NUMBER_4               &kp NUMBER_5       &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0     &trans
-&trans  &hm LEFT_SHIFT TAB  &hm LEFT_CONTROL MINUS  &hm LEFT_ALT PLUS  &hm LEFT_GUI LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PAGE_UP    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT        &trans
-&trans  &kp APOSTROPHE      &kp PERIOD              &kp COMMA          &kp LEFT_PAREN             &kp RIGHT_PAREN    &kp PAGE_DOWN  &kp HOME      &kp END        &kp BACKSLASH &kp RIGHT_SHIFT  &trans
-                                                    &to 0              &kp ESCAPE                 &kp SPACE          &kp ENTER      &kp DELETE    &to 2
+&trans  &kp NUMBER_1        &kp NUMBER_2            &kp NUMBER_3       &kp NUMBER_4               &kp NUMBER_5           &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0     &trans
+&trans  &hm LEFT_SHIFT TAB  &hm LEFT_CONTROL MINUS  &hm LEFT_ALT PLUS  &hm LEFT_GUI LEFT_BRACKET  &kp RIGHT_BRACKET      &kp PAGE_UP    &kp LEFT      &kp DOWN       &kp UP        &kp RIGHT        &trans
+&trans  &kp APOSTROPHE      &kp PERIOD              &kp COMMA          &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &kp HOME      &kp END        &kp BACKSLASH &kp RIGHT_SHIFT  &trans
+                                                    &to 0              &kp ESCAPE                 &kp SPACE              &kp ENTER      &kp DELETE    &to 2
             >;
         };
 
