@@ -21,26 +21,26 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q             &kp W               &kp E           &kp R           &kp T      &kp Y       &kp U  &kp I               &kp O                    &kp P                     &trans
-&trans  &kp A             &kp S               &kp D           &kp F           &kp G      &kp H       &kp J  &kp K               &kp L                    &kp BACKSPACE             &trans
-&trans  &hm LEFT_SHIFT Z  &hm LEFT_CONTROL X  &hm LEFT_ALT C  &hm LEFT_GUI V  &kp B      &kp N       &kp M  &hm RIGHT_ALT MINUS &hm RIGHT_CONTROL SLASH  &hm RIGHT_SHIFT SEMICOLON &trans
-                                              &kp TAB         &kp ESCAPE      &kp ENTER  &kp SPACE   &kp DELETE              &to 1
+&trans  &kp Q             &kp W               &kp E           &kp R           &kp T      &kp Y       &kp U  &kp I                          &kp O                               &kp P                     &trans
+&trans  &kp A             &kp S               &kp D           &kp F           &kp G      &kp H       &kp J  &kp K                          &kp L                               &kp BACKSPACE             &trans
+&trans  &hm LEFT_SHIFT Z  &hm LEFT_CONTROL X  &hm LEFT_ALT C  &hm LEFT_GUI V  &kp B      &kp N       &kp M  &hm RIGHT_ALT LEFT_PARENTHESIS &hm RIGHT_CONTROL RIGHT_PARENTHESIS &hm RIGHT_SHIFT SEMICOLON &trans
+                                              &kp TAB         &kp ESCAPE      &kp ENTER  &kp SPACE   &kp DELETE                            &to 1
             >;
         };
 
         punct_layer {
             bindings = <
-&trans  &kp NUMBER_1         &kp NUMBER_2           &kp NUMBER_3        &kp NUMBER_4                  &kp NUMBER_5           &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0    &trans
-&trans  &kp TAB              &kp MINUS              &kp PLUS            &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT         &kp BACKSPACE   &trans
-&trans  &hm LEFT_SHIFT GRAVE &hm LEFT_CONTROL COMMA &hm LEFT_ALT PERIOD &hm LEFT_GUI LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS  &kp APOSTROPHE &kp BACKSLASH &kp CARET      &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
-                                                           &to 0               &kp ESCAPE                    &kp ENTER              &kp SPACE      &kp DELETE    &to 2
+&trans  &kp NUMBER_1         &kp NUMBER_2           &kp NUMBER_3        &kp NUMBER_4                  &kp NUMBER_5           &kp NUMBER_6   &kp NUMBER_7 &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0    &trans
+&trans  &kp TAB              &kp MINUS              &kp PLUS            &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp LEFT       &kp DOWN     &kp UP         &kp RIGHT         &kp BACKSPACE   &trans
+&trans  &hm LEFT_SHIFT GRAVE &hm LEFT_CONTROL COMMA &hm LEFT_ALT PERIOD &hm LEFT_GUI LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS  &kp APOSTROPHE &kp SLASH    &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
+                                                    &to 0               &kp ESCAPE                    &kp ENTER              &kp SPACE      &kp DELETE   &to 2
             >;
         };
 
         media_layer {
             bindings = <
 &trans  &kp GRAVE    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE        &kp NUMBER_5   &kp LESS_THAN   &kp GREATER_THAN &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp APOSTROPHE  &trans
-&trans  &trans       &trans        &trans        &kp C_PLAY_PAUSE  &trans         &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP          &kp END               &kp RIGHT_SHIFT &trans
+&trans  &trans       &trans        &trans        &kp C_PLAY_PAUSE  &trans         &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP          &kp END               &kp CARET       &trans
 &trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RIGHT_SHIFT &trans
                                                      &to 1             &kp ESCAPE     &kp ENTER       &kp SPACE        &kp DELETE           &trans
             >;
@@ -49,14 +49,4 @@
     };
 };
 
-
-
-//         numpad_layer {
-//             bindings = <
-// &trans  &kp ESCAPE          &kp F2                  &kp F4             &kp F11             &kp F12      &kp KP_MULTIPLY  &kp N7        &kp N8                  &kp N9                      &kp MINUS             &trans
-// &trans  &hm LEFT_SHIFT TAB  &hm LEFT_CONTROL MINUS  &hm LEFT_ALT PLUS  &hm LEFT_GUI EQUAL  &kp G        &kp SLASH        &kp NUMBER_4  &hm RIGHT_ALT NUMBER_5  &hm RIGHT_CONTROL NUMBER_6  &hm RIGHT_SHIFT PLUS  &trans
-// &trans  &trans              &trans                  &kp LESS_THAN      &kp GREATER_THAN    &kp PERIOD   &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2            &kp NUMBER_3                &kp BACKSPACE         &trans
-//                                                     &to 1              &kp ESCAPE          &kp ENTER    &kp SPACE        &kp DELETE    &to 3
-//             >;
-//         };
 
