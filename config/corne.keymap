@@ -8,7 +8,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -27,10 +27,10 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q             &kp W               &kp E      &kp R           &kp T      &kp Y       &kp U         &kp I                      &kp O                     &kp P                             &trans
-&trans  &kp A             &kp S               &kp D      &kp F           &kp G      &kp H       &kp J         &kp K                      &kp L                     &kp BACKSPACE                     &trans
-&trans  &hm LEFT_SHIFT Z  &hm LEFT_CONTROL X  &kp C      &hm LEFT_GUI V  &kp B      &kp N       &kp M         &hm LEFT_PARENTHESIS COMMA &hm RIGHT_CONTROL PERIOD  &hm RIGHT_SHIFT RIGHT_PARENTHESIS &trans
-                                              &kp ESCAPE &kp TAB         &kp ENTER  &kp SPACE   &kp RIGHT_ALT &to 1
+&trans  &kp Q             &kp W               &kp E   &kp R           &kp T      &kp Y       &kp U         &kp I                &kp O                               &kp P                     &trans
+&trans  &kp A             &kp S               &kp D   &kp F           &kp G      &kp H       &kp J         &kp K                &kp L                               &kp BACKSPACE             &trans
+&trans  &hm LEFT_SHIFT Z  &hm LEFT_CONTROL X  &kp C   &hm LEFT_GUI V  &kp B      &kp N       &kp M         &kp LEFT_PARENTHESIS &hm RIGHT_CONTROL RIGHT_PARENTHESIS &hm RIGHT_SHIFT SEMICOLON &trans
+                                              &kp TAB &kp ESCAPE      &kp ENTER  &kp SPACE   &kp RIGHT_ALT &to 1
             >;
         };
 
@@ -38,8 +38,8 @@
             bindings = <
 &trans  &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3 &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0    &trans
 &trans  &kp DELETE           &kp MINUS        &kp PLUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT         &kp BACKSPACE   &trans
-&trans  &kp LEFT_SHIFT       &kp LEFT_CONTROL &kp GRAVE    &kp LEFT_GUI      &kp SEMICOLON     &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
-                                              &kp ESCAPE   &kp TAB           &kp ENTER         &kp SPACE      &kp RIGHT_ALT &td0
+&trans  &hm LEFT_SHIFT GRAVE &kp LEFT_CONTROL &kp COMMA    &kp LEFT_GUI      &kp PERIOD        &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
+                                              &kp TAB      &kp ESCAPE        &kp ENTER         &kp SPACE      &kp RIGHT_ALT &td0
             >;
         };
 
@@ -48,7 +48,7 @@
 &trans  &kp GRAVE    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE        &kp NUMBER_5   &kp LESS_THAN   &kp GREATER_THAN &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &kp APOSTROPHE  &trans
 &trans  &kp DELETE   &trans        &trans        &kp C_PLAY_PAUSE  &trans         &kp HOME        &kp PAGE_DOWN    &kp PAGE_UP          &kp END               &kp CARET       &trans
 &trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RIGHT_SHIFT &trans
-                                                 &kp ESCAPE        &kp TAB        &kp ENTER       &kp SPACE        &kp RIGHT_ALT        &to 0
+                                                 &kp TAB           &kp ESCAPE     &kp ENTER       &kp SPACE        &kp RIGHT_ALT        &to 0
             >;
         };
 
