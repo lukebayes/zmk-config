@@ -38,7 +38,7 @@
             bindings = <
 &trans  &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3 &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0    &trans
 &trans  &kp DELETE           &kp MINUS        &kp PLUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT         &kp BACKSPACE   &trans
-&trans  &hm LEFT_SHIFT GRAVE &kp LEFT_CONTROL &kp GAMMA    &kp LEFT_GUI      &kp SEMICOLON     &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
+&trans  &hm LEFT_SHIFT GRAVE &kp LEFT_CONTROL &kp GRAVE    &kp LEFT_GUI      &kp SEMICOLON     &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
                                               &kp ESCAPE      &kp TAB        &kp ENTER         &kp SPACE      &kp RIGHT_ALT &td0
             >;
         };
