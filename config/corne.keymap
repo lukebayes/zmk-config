@@ -4,11 +4,20 @@
 
 /{
     behaviors {
-        hm: homerow_mods {
+        hm_fast: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <135>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        hm_slow: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -27,10 +36,10 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q             &kp W               &kp E   &kp R           &kp T      &kp Y       &kp U         &kp I     &kp O                    &kp P                     &trans
-&trans  &kp A             &kp S               &kp D   &kp F           &kp G      &kp H       &kp J         &kp K     &kp L                    &kp BACKSPACE             &trans
-&trans  &hm LEFT_SHIFT Z  &hm LEFT_CONTROL X  &kp C   &hm LEFT_GUI V  &kp B      &kp N       &kp M         &kp COMMA &hm RIGHT_CONTROL PERIOD &hm RIGHT_SHIFT SEMICOLON &trans
-                                              &kp ESCAPE &kp TAB      &kp ENTER  &kp SPACE   &kp RIGHT_ALT &to 1
+&trans  &kp Q                  &kp W                    &kp E   &kp R                &kp T      &kp Y         &kp U         &kp I     &kp O                    &kp P                     &trans
+&trans  &kp A                  &kp S                    &kp D   &kp F                &kp G      &kp H         &kp J         &kp K     &kp L                    &kp BACKSPACE             &trans
+&trans  &hm_fast LEFT_SHIFT Z  &hm_slow LEFT_CONTROL X  &kp C   &hm_slow LEFT_GUI V  &kp B      &kp N         &kp M         &kp COMMA &hm_slow RIGHT_CONTROL PERIOD &hm_fast RIGHT_SHIFT SEMICOLON &trans
+                               &kp ESCAPE               &kp TAB &kp ENTER            &kp SPACE  &kp RIGHT_ALT &to 1
             >;
         };
 
@@ -38,7 +47,7 @@
             bindings = <
 &trans  &kp NUMBER_1         &kp NUMBER_2     &kp NUMBER_3 &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp NUMBER_0    &trans
 &trans  &kp DELETE           &kp MINUS        &kp PLUS     &kp LEFT_BRACKET  &kp RIGHT_BRACKET &kp LEFT       &kp DOWN      &kp UP         &kp RIGHT         &kp BACKSPACE   &trans
-&trans  &hm LEFT_SHIFT GRAVE &kp LEFT_CONTROL &kp GRAVE    &kp LEFT_GUI      &kp SEMICOLON     &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
+&trans  &hm_fast LEFT_SHIFT GRAVE &kp LEFT_CONTROL &kp GRAVE    &kp LEFT_GUI      &kp SEMICOLON     &kp APOSTROPHE &kp SLASH     &kp BACKSLASH  &kp RIGHT_CONTROL &kp RIGHT_SHIFT &trans
                                               &kp ESCAPE      &kp TAB        &kp ENTER         &kp SPACE      &kp RIGHT_ALT &td0
             >;
         };
