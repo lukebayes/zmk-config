@@ -4,18 +4,18 @@
 
 /{
     behaviors {
-        hm_fast: homerow_mods {
+        hm_fast: fast_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "fast_mods";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-        hm_slow: homerow_mods {
+        hm_slow: slow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
+            label = "slow_mods";
             #binding-cells = <2>;
             tapping-term-ms = <250>;
             quick-tap-ms = <0>;
